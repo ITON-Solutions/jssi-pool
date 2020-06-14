@@ -1,0 +1,21 @@
+group 'iton.jssi'
+version '1.0'
+
+
+description = 'Classes and utilities for pool.'
+
+dependencies {
+    compile project(':ledger')
+    compile project(':ursa')
+    compile project(':sodium')
+
+    compile 'org.zeromq:jeromq:0.5.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.10.0'
+    compile 'org.msgpack:jackson-dataformat-msgpack:0.8.17'
+    compile 'com.madgag.spongycastle:core:1.58.0.0'
+    compile 'com.madgag.spongycastle:prov:1.58.0.0'
+
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.5.0'
+    testCompile 'org.junit.jupiter:junit-jupiter-params:5.5.0'
+    testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.5.0'
+}
